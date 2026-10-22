@@ -23,7 +23,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/dnsx@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/dnsx@sha256:c1a3409172c9c7b268b8ac374e0bd16fc046bf3fccec95890a2b12fe8fcabece
   platforms: [linux/amd64, linux/arm64]
   command: ["dnsx", "-l", "{domain}", "-a", "-aaaa", "-cname", "-ns", "-txt", "-mx", "-soa", "-caa", "-json", "-omit-raw", "-silent", "-duc"]
   output_format: jsonl
